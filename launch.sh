@@ -41,4 +41,4 @@ fi
 cd /minecraft
 
 echo "Starting minecraft"
-java ${JAVA_OPTS} -jar "${SERVER}"
+java ${JAVA_OPTS} -jar "${SERVER}" --nogui
