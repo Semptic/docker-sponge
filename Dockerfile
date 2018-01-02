@@ -4,7 +4,6 @@ RUN apk add --no-cache curl jq
 
 RUN mkdir /mc
 ADD launch.sh /mc/
-ADD server.properties /mc/
 
 RUN chmod +x /mc/launch.sh
 
