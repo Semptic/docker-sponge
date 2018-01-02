@@ -4,7 +4,7 @@ setServerProp() {
   local prop=$1
   local var=$2
   if [ -n "$var" ]; then
-    if grep -1 $prop /minecraft/server.properties; then
+    if grep -q $prop /minecraft/server.properties; then
       sed -i "/$prop\s*=/ c $prop=$var" /minecraft/server.properties
     else
         echo "$prop=$var" >> /minecraft/server.properties
