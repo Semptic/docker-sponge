@@ -46,7 +46,6 @@ if [ ! -f "/minecraft/${SERVER}" ]; then
 
     setServerProp "motd" "${MOTD}"
     setServerProp "white-list" "true"
-    setServerProp "rcon.password" "${RCON_PW}"
 
     echo $OPS > /minecraft/ops.txt
 
