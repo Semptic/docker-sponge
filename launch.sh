@@ -48,6 +48,8 @@ if [ ! -f "/minecraft/${SERVER}" ]; then
     setServerProp "white-list" "true"
     setServerProp "rcon.password" "${RCON_PW}"
 
+    echo $OPS > /minecraft/ops.txt
+
     mkdir -p /minecraft/mods
 
     cd /minecraft
