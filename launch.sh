@@ -52,7 +52,5 @@ if [ ! -f "/minecraft/${SERVER}" ]; then
     rm -r /tmp/mc
 fi
 
-cd /minecraft
-
-echo "Starting minecraft"
-java ${JAVA_OPTS} -jar "${SERVER}" --nogui
+tmux new-session -s mc -d "cd /minecraft && java ${JAVA_OPTS} -jar \"${SERVER}\" --nogui"
+tmux attach -t mc

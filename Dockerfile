@@ -1,6 +1,6 @@
 FROM java:8-jre-alpine
 
-RUN apk add --no-cache curl jq
+RUN apk add --no-cache curl jq tmux
 
 RUN mkdir /mc
 ADD launch.sh /mc/
